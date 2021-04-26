@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pedido_detalles",
+  "info": {
+    "name": "pedido_detalle"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "id_pedido_detalle": {
+      "type": "uid"
+    },
+    "articulo": {
+      "model": "articulos"
+    },
+    "cantidad": {
+      "type": "integer"
+    },
+    "precio_unitario": {
+      "type": "decimal"
+    },
+    "importe": {
+      "type": "decimal"
+    },
+    "costo": {
+      "type": "decimal"
+    },
+    "iva": {
+      "type": "decimal"
+    },
+    "impuesto_interno": {
+      "type": "decimal"
+    }
+  }
+}

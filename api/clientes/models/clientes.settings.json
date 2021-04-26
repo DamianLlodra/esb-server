@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clientes",
+  "info": {
+    "name": "Clientes"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "id_cliente": {
+      "type": "uid"
+    },
+    "nombre": {
+      "type": "string"
+    },
+    "razon_social": {
+      "type": "string"
+    },
+    "domicilio_fiscal": {
+      "type": "string"
+    },
+    "documento": {
+      "type": "string"
+    },
+    "tipo_documento": {
+      "type": "enumeration",
+      "enum": [
+        "DNI",
+        "CUIT"
+      ]
+    },
+    "observaciones": {
+      "type": "text"
+    },
+    "telefono": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "kind": "collectionType",
+  "collectionName": "articulos",
+  "info": {
+    "name": "Articulos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "id_articulo": {
+      "type": "uid"
+    },
+    "descripcion": {
+      "type": "string"
+    },
+    "unidades": {
+      "type": "integer"
+    },
+    "blisters": {
+      "type": "integer"
+    },
+    "unidad_de_medida": {
+      "type": "enumeration",
+      "enum": [
+        "Kilo",
+        "gr",
+        "Litro",
+        "cc",
+        "Metro",
+        "cm"
+      ]
+    },
+    "contenido": {
+      "type": "decimal"
+    },
+    "EAN": {
+      "type": "string"
+    },
+    "DUN": {
+      "type": "string"
+    },
+    "stock": {
+      "type": "decimal"
+    },
+    "modo_calculo_precio": {
+      "type": "enumeration",
+      "enum": [
+        "Mark_Up",
+        "Margen"
+      ]
+    },
+    "margen": {
+      "type": "decimal"
+    },
+    "costo": {
+      "type": "decimal"
+    },
+    "iva": {
+      "type": "decimal"
+    },
+    "impuesto_interno": {
+      "type": "decimal"
+    },
+    "precio_final": {
+      "type": "decimal"
+    },
+    "categoria": {
+      "model": "categorias"
+    },
+    "foto": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

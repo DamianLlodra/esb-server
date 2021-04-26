@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pedidos",
+  "info": {
+    "name": "Pedidos"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "id_pedido": {
+      "type": "uid"
+    },
+    "cliente": {
+      "model": "clientes"
+    },
+    "vendedore": {
+      "model": "vendedores"
+    },
+    "fecha_pedido": {
+      "type": "date"
+    },
+    "fecha_entrega": {
+      "type": "date"
+    },
+    "estado": {
+      "type": "enumeration",
+      "enum": [
+        "Abierto",
+        "Cerrado",
+        "Aprobado",
+        "Preparado",
+        "Entregado",
+        "Rechazado",
+        "Cancelado"
+      ]
+    },
+    "importe_total": {
+      "type": "decimal"
+    },
+    "pedido_detalles": {
+      "collection": "pedido-detalle"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "administradores",
+  "info": {
+    "name": "administradores"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "id_administrador": {
+      "type": "uid"
+    },
+    "nombre": {
+      "type": "string"
+    },
+    "empresa": {
+      "model": "empresas"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

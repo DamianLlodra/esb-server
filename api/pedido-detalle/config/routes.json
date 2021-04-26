@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pedido-detalles",
+      "handler": "pedido-detalle.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pedido-detalles/count",
+      "handler": "pedido-detalle.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pedido-detalles/:id",
+      "handler": "pedido-detalle.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pedido-detalles",
+      "handler": "pedido-detalle.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pedido-detalles/:id",
+      "handler": "pedido-detalle.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pedido-detalles/:id",
+      "handler": "pedido-detalle.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
