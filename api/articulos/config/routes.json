@@ -18,6 +18,14 @@
     },
     {
       "method": "GET",
+      "path": "/articulos/catalogue",
+      "handler": "articulos.catalogue",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/articulos/:id",
       "handler": "articulos.findOne",
       "config": {
@@ -44,6 +52,14 @@
       "method": "DELETE",
       "path": "/articulos/:id",
       "handler": "articulos.delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/catalogue",
+      "handler": "articulos.catalogue",
       "config": {
         "policies": []
       }

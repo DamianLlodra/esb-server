@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "pedido_detalles",
   "info": {
-    "name": "pedido_detalle"
+    "name": "pedido_detalle",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -10,9 +11,6 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "id_pedido_detalle": {
-      "type": "uid"
-    },
     "articulo": {
       "model": "articulos"
     },

@@ -11,9 +11,6 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "id_articulo": {
-      "type": "uid"
-    },
     "descripcion": {
       "type": "string"
     },
@@ -71,7 +68,7 @@
     "categoria": {
       "model": "categorias"
     },
-    "foto": {
+    "imagenes": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
@@ -81,6 +78,10 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "Activo": {
+      "type": "boolean",
+      "default": true
     }
   }
 }

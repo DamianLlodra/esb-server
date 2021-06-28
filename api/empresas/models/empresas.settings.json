@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "empresas",
   "info": {
-    "name": "Empresas"
+    "name": "Empresas",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -10,9 +11,6 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "id_empresa": {
-      "type": "uid"
-    },
     "nombre": {
       "type": "string"
     },

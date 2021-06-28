@@ -10,10 +10,18 @@
     },
     {
       "method": "GET",
+      "path": "/pedidos/cliente/:idCliente",
+      "handler": "pedidos.byClient",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/pedidos/count",
       "handler": "pedidos.count",
       "config": {
-        "policies": []
+        "policies": [] 
       }
     },
     {
